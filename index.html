@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CaTraCake</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/hamburger.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link href="css/aos.css" rel="stylesheet">
+    <script src="js/aos.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/parallax.js"></script>
+    <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+            
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+            
+                  // Store hash
+                  var hash = this.hash;
+            
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+               
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+
+            });
+
+            // buat zooming hero image(backround pertama)
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                $(".bgimg").css({
+                    backgroundSize: (100 + scroll/5)  + "%",
+                    
+                });
+            });
+
+
+            </script>
+</head>
+<body>
+    <!--header-->
+        <!--drop header-->
+    <div id="header">
+            <!--hamburger menu-->
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+             <!--sidebar-->
+            <div class="menu" id="menu">
+                <h2>
+                    <a href="#product">Product</a>
+                    <a href="#order">Order</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#aboutUs">About us</a>
+                </h2>
+             </div>
+             <!--end sidebar-->
+        </div>
+                <!--end hamburger menu-->
+        <h1 style="text-align:right;text-shadow: 2px 2px 4px #ffffff; margin:0;padding:3px;">
+           CaTraCake
+        </h1>
+        
+    </div>
+        <!--end drop header-->
+    <div class="bgimg" id="bgimg"> 
+        <div class="middle">
+            <h1 data-aos="fade-up" data-aos-delay="1000">CATRACAKE</h1>
+            <hr style="margin:auto; width:40%" data-aos="zoom-in" data-aos-delay="500">
+            <p style="font-weight:bold; font-size: 30px" data-aos="fade-down" data-aos-delay="1500">Catering Traditional Cake</p>
+        </div>
+        <div class="bottomleft">
+            <p data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" data-aos-delay="500" data-aos-duration="1500">Nikmat, lezat dan Hemat</p>
+        </div>
+    </div>
+    <!--end of header-->
+
+   
+
+    <!--  -->
+    <div class="product" id="product">
+        <h1>Produk Kami</h1>
+        <ul>
+            <li data-aos="flip-left" data-aos-delay="500">
+                <div class="caption">
+                    Kenikmatan nasi yang gurih dipadukan dengan isian yang lezat siap untuk mendarat di mulut anda
+                    <br/><span style="font-size: 20px;font-style: italic;">Rp.2000/pcs</span>
+                </div>
+            </li>
+            <li data-aos="flip-left" data-aos-delay="600">
+                <div class="caption">
+                    Butiran-butiran wijen yang beraroma khas menyelimuti seluruh permukaanya
+                    <br/><span style="font-size: 20px;font-style: italic;">Rp.2000/pcs</span>
+                </div>
+            </li>
+            <li data-aos="flip-left" data-aos-delay="700">
+                <div class="caption">
+                    Rasakan sensasi ketika anda mulai menggigit kulit luarnya dan menemukan sesuatu yang istimewa didalamnya
+                    <br/><span style="font-size: 20px;font-style: italic;">Rp.2000/pcs</span>
+                </div>
+            </li>
+            <li data-aos="flip-left" data-aos-delay="800">
+                <div class="caption">
+                    Rasanya yang manis dan teksturnya yang kenyal membuat anda selalu ingin bersamanya
+                    <br/><span style="font-size: 20px;font-style: italic;">Rp.1000/pcs</span>
+                </div>
+            </li>
+            <li data-aos="flip-left" data-aos-delay="900">
+                <div class="caption">
+                    Dibalik tumpukan parutan kelapa tersembunyilah sebuah rasa yang amat menyenangkan
+                    <br/><span style="font-size: 20px;font-style: italic;">Rp.1000/3pcs</span>
+                </div>
+            </li>
+            <li data-aos="flip-left" data-aos-delay="1000">
+                <div class="caption">
+                    Teksturnya yang lembut sangat menenjakan gigi anda hingga tak merasakan sudah menggigitnya berkali-kali
+                    <br/><span style="font-size: 20px;font-style: italic;">Rp.1500/pcs</span>
+                </div>
+            </li>
+            <li data-aos="flip-left" data-aos-delay="1100">
+                <div class="caption">
+                    Tampak berkilauan jika dilihat dari luar, cobalah untuk mengigitnya dan melihat isi didalamnya
+                    <br/><span style="font-size: 20px;font-style: italic;">Rp.3000/2pcs</span>
+                </div>
+            </li>
+            <li data-aos="flip-left" data-aos-delay="1200">
+                <div class="caption">
+                    Warna hijau mempesona dengan riasan parutan kelapa menbuatnya tampak cantik jelita
+                    <br/><span style="font-size: 20px;font-style: italic;">Rp.1000/pcs</span>
+                </div>
+            </li>
+            <li data-aos="flip-left" data-aos-delay="1300">
+                <div class="caption">
+                    Dibungkus dengan daun pisang karna ia tau engkau pasti akan membuka dan memakannya
+                    <br/><span style="font-size: 20px;font-style: italic;">Rp.1000/pcs</span>
+                </div>
+            </li>
+            <li data-aos="flip-left" data-aos-delay="1400">
+                <div class="caption">
+                    Segumpal pisang yang bersembunyi di balik renyahnya balutan tepung menungu untuk di temukan
+                    <br/><span style="font-size: 20px;font-style: italic;">Rp.1000/pcs</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="order" id="order" data-parallax="scroll" data-image-src="img/para3.png" >
+            <form action="#" class="form" >
+                    <h1 align="left" class="b" data-aos="zoom-out">Pesan Sekarang</h1>
+                    <label for="nama" data-aos="fade-left" data-aos-anchor=".b" data-aos-duration="2000">
+                        <b>Nama</b>
+                    </label>
+                    <input type="text" placeholder="Enter Your Name" name="nama" required data-aos="fade-up-left" data-aos-anchor=".b" data-aos-delay="200">
+
+                    <label for="noHp"  data-aos="fade-left" data-aos-anchor=".b" data-aos-duration="2000">
+                        <b>No HP</b>
+                    </label>
+                    <input type="text" placeholder="Enter Phone Number" name="noHP" required data-aos="fade-up-right" data-aos-anchor=".b" data-aos-delay="400">
+
+                    <label for="order"  data-aos="fade-left" data-aos-anchor=".b" data-aos-duration="2000">
+                        <b>Pesanan</b>
+                    </label>
+                    <input type="text" placeholder="Enter Your Order" name="order" required data-aos="fade-up-left" data-aos-anchor=".b" data-aos-delay="600">
+
+                    <label for="jumlah"  data-aos="fade-left" data-aos-anchor=".b" data-aos-duration="2000">
+                        <b>Jumlah Beli</b>
+                    </label>
+                    <input type="text" placeholder="Enter Quantity" name="jumlah" required data-aos="fade-up-right" data-aos-anchor=".b" data-aos-delay="800">
+
+                    <button type="submit" class="buton">Pesan Sekarang</button>
+            </form>
+
+    </div>
+    <div class="contact" id="contact" data-aos="zoom-in">
+
+        <div class="wrap-contact" >
+            <h1 data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">CONTACT</h1><br/><br/>
+            <a class="btn" href="http://facebook.com" target="_blank" data-aos="fade-up-right" data-aos-delay="500">
+                <i class="fab fa-facebook-f"></i> 
+            </a>
+
+            <a class="btn" href="http://twitter.com" target="_blank" data-aos="fade-up" data-aos-delay="300">
+                <i class="fab fa-twitter"></i> 
+            </a>
+
+            <a class="btn" href="http://instagram.com" target="_blank" data-aos="fade-up" data-aos-delay="100"> 
+                <i class="fab fa-instagram"></i> 
+            </a>
+
+            <a class="btn" href="http://plus.google.com" target="_blank" data-aos="fade-up" data-aos-delay="300">
+                <i class="fab fa-google-plus-g"></i> 
+            </a>
+
+            <a class="btn" href="http://telegrem.com" target="_blank" data-aos="fade-up-left" data-aos-delay="500">
+                <i class="fab fa-telegram-plane"></i> 
+            </a>
+        </div>
+        
+        
+        
+        
+        
+
+    </div>
+    <div class="aboutUs" id="aboutUs" data-parallax="scroll" data-image-src="img/para4.png">
+        <div class="wrap-aboutUs">
+            <h1 align="center" data-aos="flip-up" class="a">Tentang Kami</h1>
+            <p align="justify" data-aos="fade-right" data-aos-anchor=".a">
+                Setiap hal pasti dimulai dari hal yang terkecil. Sama seperti apa yang kami lakukan sekarang. Dimulai dari hobi seorang ibu rumah tangga yang senang memasak,
+                rasa penasaran akan resep sebuah kue, bagaimana cara memasaknya dengan benar hingga menghasilkan sebuah makanan yang sangat enak telah berkali-kali kami lakukan.
+                mungkin pada awalnya hanya membuat jajanan untuk dihidangkan sendiri di rumah, lalu membuatnya juga pada saat ada acara-acara tertentu hingga muncul ide untuk 
+                mengkomersilkan produk kami.
+            </p>
+            <p align="justify" data-aos="fade-left" data-aos-anchor=".a">
+                Awal tahun 2012 kami memulai dengan usaha kecil-kecilan, hanya menerima pesanan untuk acara tertentu hingga sekarang sudah mulai rutin setiap harinya untuk membuat berbagai 
+                macam produk yang kemudian distribusikan ke pasar-pasar terdekat. dan untuk perkambangan hingga sekarang kami sudah memberikan layanan pemesanan via online dengan harapan 
+                para konsumer lebih mudah untuk memesan darimana saja.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrap-footer">
+            <i class="fas fa-map-marker-alt"></i> jl.tegalRejo, Mranggen, Demak <br/>
+            <i class="fas fa-phone"></i> 082227851793<br/><br/>
+            catracake &copy 2018 by Riyan.kencana16 <br/>
+        </div>
+    </footer>
+   
+    <div class="backToTop" id="toTop">
+        <a href="#bgimg"><i class="fas fa-angle-double-up"></i></a> 
+    </div>
+   
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
