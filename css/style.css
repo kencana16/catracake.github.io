@@ -124,8 +124,8 @@ body, html {
 }
 
 .product ul li:hover .caption{
-    bottom: 10px;
-    transition: .5s;
+    bottom: 24px;
+    transition: .3s;
     width:75%;
 }
 
